@@ -10,6 +10,6 @@ export class AppComponent {
   title = 'ingresoEgresoApp';
 
   constructor(private authService: AuthService) {
-    authService.initAurhListener().subscribe( fuser => {console.log(fuser?.uid); console.log(fuser?.email); });
+    authService.initAurhListener();
   }
 }
